@@ -1,0 +1,34 @@
+{
+  "dataBinding": {
+    "/view/Master.view.xml": {
+      "entitySet": ""
+    },
+    "/view/Main.view.xml": {
+      "entitySet": "UNBINDKEY"
+    }
+  },
+  "generation": [
+    {
+      "templateId": "ui5template.fioriFullScreen",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Wed, 12 Aug 2015 00:11:16 GMT"
+    },
+    {
+      "templateId": "ui5template.basicSAPUI5ApplicationComponent",
+      "templateVersion": "1.4.0",
+      "dateTimeStamp": "Wed, 12 Aug 2015 08:00:00 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  },
+  "hcpdeploy": {
+    "account": "p1941578957trial",
+    "name": "sapmrf",
+    "lastVersionWeTriedToDeploy": "1.0.7"
+  }
+}

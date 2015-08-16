@@ -1,0 +1,17 @@
+<core:View controllerName="SAP_MRF.view.OverallView" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page enableScrolling="false" navButtonPress="onNavBack" showNavButton="true" title="Overall View">
+		<TileContainer id="container" tileDelete="handleTileDelete" tiles="{/TileCollection}">
+			<StandardTile icon="sap-icon://{icon}" info="{info}" infoState="{infoState}" number="{number}" numberUnit="{numberUnit}" title="{title}"
+				type="{type}" press="quickbook"/>
+		</TileContainer>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button press="handleEditPress" text="Edit"/>
+				<Button press="handleBusyPress" text="Busy state"/>
+				<ToolbarSpacer/>
+			</Toolbar>
+		</footer>
+	</Page>
+</core:View>

@@ -1,0 +1,72 @@
+{
+	"TileCollection": [
+
+		{
+			"icon": "locked",
+			"number": "301",
+			"title": "Not available for next",
+			"info": "25 mins(Booked)",
+			"status": "locked",
+			"infoState": "Error"
+    },
+		{
+			"icon": "locked",
+			"number": "320",
+			"title": "Not available for next",
+			"info": "1hr 30mins(Booked)",
+			"infoState": "Error"
+    },
+		{
+			"icon": "unlocked",
+			"number": "318",
+			"title": "Available for next",
+			"info": "7hrs",
+			"infoState": "Success"
+    }, {
+			"icon": "locked",
+			"number": "362",
+			"title": "Not available for next",
+			"info": "15mins(Booked)",
+			"infoState": "Error"
+    },
+		{
+			"icon": "unlocked",
+			"number": "345",
+			"title": "Available for next",
+			"info": "15mins",
+			"infoState": "Success"
+    }, {
+			"icon": "unlocked",
+			"number": "302",
+			"title": "Available for next",
+			"info": "25mins",
+			"infoState": "Success"
+    }, {
+			"icon": "locked",
+			"number": "311",
+			"title": "Not available for next",
+			"info": "30mins(Booked)",
+			"infoState": "Error"
+    },
+		{
+			"icon": "unlocked",
+			"number": "309",
+			"title": "Available for next",
+			"info": "1hr",
+			"infoState": "Success"
+    }, {
+			"icon": "locked",
+			"number": "332",
+			"title": "Not available for next",
+			"info": "1hr(Booked)",
+			"infoState": "Error"
+    },
+		{
+			"icon": "unlocked",
+			"number": "351",
+			"title": "Available for next",
+			"info": "30mins",
+			"infoState": "Success"
+    }
+  ]
+}

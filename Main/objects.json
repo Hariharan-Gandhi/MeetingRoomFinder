@@ -1,0 +1,28 @@
+{
+
+	"ProductId": "1239102",
+	"EmployeeName": "Hariharan Gandhi",
+	"IsManager": "Y",
+	"Building": "05",
+	"Floor": "ALL",
+	"Department": "SAP HANA CLOUD PLATFORM",
+	"Location": "D120",
+	"Category": "Projector",
+
+	"ProductPicUrl": "test-resources/sap/ui/demokit/explored/img/large_HT-6100.jpg",
+	"TileCollection": [
+		{
+			"icon": "add",
+			"number": "89",
+			"title": "Approve Leave Requests",
+			"info": "Overdue",
+			"infoState": "Error"
+    },
+		{
+			"icon": "Create",
+			"title": "Create Leave Requests",
+			"info": "28 Days Left",
+			"infoState": "Success"
+    }
+  ]
+}

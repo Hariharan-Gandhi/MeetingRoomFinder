@@ -1,0 +1,13 @@
+.navTableControlLayout {
+    padding: 1rem 2rem 0 2rem;
+}
+.sap-tablet .navTableControlLayout {
+    padding: 1rem 1rem 1rem 1rem;
+}
+.sap-phone .navTableControlLayout {
+    padding: 0 0 0 0;
+}
+.navTableItemLayout {
+    min-height: 5rem;
+    padding: 1rem 0 1rem 0;
+}

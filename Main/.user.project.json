@@ -1,0 +1,19 @@
+{
+  "run": [
+    {
+      "filePath": "/SAP_MRF/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 8098579,
+        "displayName": "New Web Application 1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<core:View xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:m="sap.m" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:smartField="sap.ui.comp.smartfield" xmlns="sap.ui.commons"
+	controllerName="SAP_MRF.view.Master">
+
+	<m:Page title="SAP MEETING ROOM FINDER">
+		<m:content>
+			<l:Grid defaultSpan="L12 M12 S12" width="auto">
+				<l:content>
+					<f:SimpleForm columnsL="2" columnsM="2" editable="false" emptySpanL="4" emptySpanM="4" id="SimpleFormDisplay480" labelSpanL="4"
+						labelSpanM="4" layout="ResponsiveGridLayout" maxContainerCols="2">
+						<f:content>
+							<m:Label text="Name"/>
+							<m:Text text="{/EmployeeName}"/>
+							<m:Label text="Location"/>
+							<m:Text text="{/Location}"/>
+						</f:content>
+					</f:SimpleForm>
+				</l:content>
+			</l:Grid>
+			<!-- Section 1-->
+			<m:List>
+				<m:ActionListItem text="Overall View"/>
+			</m:List>
+			<f:SimpleForm columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3"
+				layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024">
+				<f:content columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3"
+					layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024" title="Address">
+					<m:Label text="Location"/>
+					<m:List>
+						<m:DisplayListItem label="Building" value="{/Building}"/>
+						<m:DisplayListItem label="Floor" value="{/Floor}"/>
+					</m:List>
+					<m:Label text="Slot"/>
+					<m:DateTimeInput class="sapUiSmallMarginBottom" id="overalldt" placeholder="Enter Date &amp; Time ..." type="DateTime"/>
+					<m:Button text="Show" type="Accept" press="onOverallView"></m:Button>
+				</f:content>
+			</f:SimpleForm>
+			<!-- Section 2-->
+			<m:List>
+				<m:ActionListItem text="Find me a room"/>
+			</m:List>
+			<f:SimpleForm columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3"
+				layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024">
+				<f:content columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="3"
+					layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024" title="Address">
+					<m:Label text="When"/>
+					<m:SegmentedButton selectedButton="Now">
+						<m:Button id="Now" text="Now"  press="now"/>
+						<m:Button id="15mins" text="in 15mins" press="on15mins"/>
+						<m:Button id="30mins" text="in 30mins" press="on30mins"/>
+						<m:Button id="1hour" text="in 1hour" press="on1hr"/>
+					</m:SegmentedButton>
+					<m:Label text="Slot"/>
+				<!--	<m:DateTimeInput class="sapUiSmallMarginBottom" id="findnowdt" placeholder="Enter Date &amp; Time ..." type="DateTime"/> -->
+					<m:Text id="findnowdt"/>
+					<m:Button text="Find" id="btnFind" type="Accept" press="onPressFind"></m:Button>
+				</f:content>
+			</f:SimpleForm>
+			<!-- Section 3-->
+			<m:List>
+				<m:ActionListItem text="Search my favourite"/>
+			</m:List>
+			<f:SimpleForm columnsL="1" columnsM="1" editable="false" emptySpanL="4" emptySpanM="4" labelSpanL="3" labelSpanM="2"
+				layout="ResponsiveGridLayout" maxContainerCols="5" minWidth="1024">
+				<f:content>
+					
+					<m:Label/>
+					<m:HBox>
+						<m:CheckBox selected="true" text="Projector"/>
+						<m:CheckBox text=">5 Seats"/>
+						<m:CheckBox selected="true" text="5-10 Seats"/>
+						<m:CheckBox text="Board"  tooltip="White Board for writing"/>
+						<m:CheckBox enabled="false" text="VC"  tooltip="Video Conferencing"/>
+					</m:HBox>
+					<m:Label/>
+					<m:Toolbar>
+						<m:SearchField search="onSearch"/>
+					</m:Toolbar>
+				</f:content>
+			</f:SimpleForm>
+		</m:content>
+	</m:Page>
+</core:View>

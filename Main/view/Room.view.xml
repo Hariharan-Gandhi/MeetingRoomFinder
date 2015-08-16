@@ -1,0 +1,70 @@
+<core:View controllerName="SAP_MRF.view.Room" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout"
+	xmlns:m="sap.m" xmlns="sap.suite.ui.commons">
+	<m:Page title="Room-Details" enableScrolling="true"  showNavButton="true" navButtonPress="onNavBack">
+		<m:content>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%">
+				<l:content>
+					<m:List binding="{/SupplierCollection/0}" headerText="Room Descriptor">
+						<m:DisplayListItem label="Room Number: " value="302"/>
+						<m:DisplayListItem label="Building" value="3"/>
+						<m:DisplayListItem label="Next free slot" value="3.15 p.m - 3.45 p.m"/>
+						<m:DisplayListItem label="Capacity" value="16"/>
+						<m:DisplayListItem label="Facilities" value="Video Projector, Whiteboard"/>
+					</m:List>
+					
+					<m:HBox class="sapUiSmallMargin">
+    <m:Label text="True Booking Status: "/>
+    <core:Icon
+      src="sap-icon://alert"
+      class="size1"
+      color="#d50000" >
+      <core:layoutData>
+        <m:FlexItemData growFactor="1" />
+      </core:layoutData>
+    </core:Icon>
+    </m:HBox>
+					
+				</l:content>
+			</l:VerticalLayout>
+			<l:VerticalLayout class="sapUiContentPadding" width="100%" height="50%">
+				<l:content>
+    				<Timeline
+                        id="idTimeline"
+                        width="30%"
+                        height="60%"
+                        sortOldestFirst="true">
+                        <content>
+                    		<TimelineItem
+                                dateTime  = "12-Aug-15,  02:00 pm - 02:30 pm" 
+                                userNameClickable = "true"
+                                userName = "John Smith"
+                                title = "has booked"
+                                filterValue = "HCP"
+                                icon = "sap-icon://notes"
+                                userNameClicked ="attachUserNameClicked">
+                          </TimelineItem>
+                          <TimelineItem
+                                dateTime  = "12-Aug-15, 03:45 pm - 04:30 pm"
+                                userNameClickable = "true"
+                                userName = "William Johnson"
+                                title = "has booked"
+                                filterValue = "HCP"
+                                icon = "sap-icon://notes"
+                                userNameClicked ="attachUserNameClicked2">
+                          </TimelineItem>  
+                          <TimelineItem
+                                dateTime  = "12-Aug-15, 04:30 pm - 05:30 pm"
+                                userNameClickable =  "true"
+                                userName = "Nancy Grace"
+                                title = "has booked"
+                                filterValue = "UI5"
+                                icon = "sap-icon://notes"
+                                userNameClicked ="attachUserNameClicked1">
+                          </TimelineItem> 
+                        </content>
+                    </Timeline> 
+				</l:content>
+			</l:VerticalLayout>
+		</m:content>
+	</m:Page>
+</core:View>

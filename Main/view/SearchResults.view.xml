@@ -1,0 +1,93 @@
+<core:View controllerName="SAP_MRF.view.SearchResults" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page class="sapUiContentPadding" enableScrolling="true" navButtonPress="onNavBack" showHeader="true" showNavButton="true"
+		title="Search Results">
+		<content>
+			<core:HTML content='&lt;div class=&quot;content&quot;&gt;&lt;h4&gt;Best Fit&lt;/h4&gt;&lt;/div&gt;'></core:HTML>
+			<ScrollContainer focusable="true" height="300px" horizontal="true" vertical="true" width="90%">
+				<Table id="idProductsTable8" items="{/BestFit}">
+					<columns>
+						<Column width="12em"><Text text="Name"/></Column>
+						<Column demandPopin="true" minScreenWidth="Tablet"><Text text="Location"/></Column>
+						<Column demandPopin="true" hAlign="Right" minScreenWidth="Tablet"><Text text="Free for"/></Column>
+						<Column hAlign="Right"><Text text="Book"/></Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier text="{ProductId}" title="{Name}"/>
+								<Text text="{SupplierName}"/>
+								<Text text="{Status}"/>
+								<ObjectNumber number="{Price}" unit="{CurrencyCode}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</ScrollContainer >
+			<!-- second table -->
+			<core:HTML content='&lt;br/&gt;'></core:HTML>
+			<core:HTML content='&lt;div class=&quot;content&quot;&gt;&lt;h4&gt;Closest Rooms&lt;/h4&gt;&lt;/div&gt;'></core:HTML>
+			<ScrollContainer focusable="true" height="300px" horizontal="true" vertical="true" width="90%">
+				<Table id="idProductsTable2" items="{/Closer}">
+					<columns>
+						<Column width="12em"><Text text="Name"/></Column>
+						<Column demandPopin="true" minScreenWidth="Tablet"><Text text="Location"/></Column>
+						<Column demandPopin="true" hAlign="Right" minScreenWidth="Tablet"><Text text="Free for"/></Column>
+						<Column hAlign="Right"><Text text="Book"/></Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier text="{ProductId}" title="{Name}"/>
+								<Text text="{SupplierName}"/>
+								<Text text="{Status}"/>
+								<ObjectNumber number="{Price}" unit="{CurrencyCode}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</ScrollContainer >
+			<!-- end second table -->
+			<core:HTML content='&lt;br/&gt;'></core:HTML>
+			<!-- third table -->
+			<core:HTML content='&lt;div class=&quot;content&quot;&gt;&lt;h4&gt;Soonest Free Rooms&lt;/h4&gt;&lt;/div&gt;'></core:HTML>
+			<ScrollContainer focusable="true" height="300px" horizontal="true" vertical="true" width="90%">
+				<Table id="idProductsTable3" items="{/Sooner}">
+					<columns>
+						<Column width="12em"><Text text="Name"/></Column>
+						<Column demandPopin="true" minScreenWidth="Tablet"><Text text="Location"/></Column>
+						<Column demandPopin="true" hAlign="Right" minScreenWidth="Tablet"><Text text="Free for"/></Column>
+						<Column hAlign="Right"><Text text="Book"/></Column>
+					</columns>
+					<items>
+						<ColumnListItem>
+							<cells>
+								<ObjectIdentifier text="{ProductId}" title="{Name}"/>
+								<Text text="{SupplierName}"/>
+								<Text text="{Status}"/>
+								<ObjectNumber number="{Price}" unit="{CurrencyCode}"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+			</ScrollContainer >
+			<!-- end third table -->
+		</content>
+		<footer>
+			<OverflowToolbar id="otbFooter">
+				<ToolbarSpacer/>
+				<Button text="Accept" type="Accept">
+					<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+				</Button>
+				<Button text="Reject" type="Reject">
+					<layoutData><OverflowToolbarLayoutData moveToOverflow="false"/></layoutData>
+				</Button>
+				<OverflowToolbarButton icon="sap-icon://delete" text="Delete"/>
+				<OverflowToolbarButton icon="sap-icon://edit" text="Edit"/>
+				<OverflowToolbarButton icon="sap-icon://add" text="Add"/>
+				<OverflowToolbarButton icon="sap-icon://favorite" text="Favorite"/>
+				<OverflowToolbarButton icon="sap-icon://flag" text="Flag"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</core:View>
