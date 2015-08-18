@@ -26,7 +26,7 @@
 Application is hosted on SAP HANA Cloud: https://sapmrf-p1941578957trial.dispatcher.hanatrial.ondemand.com/
 
 ##Event:
-###SAP InnoJAM 2015 Mobile App Competition - 1st place Winner Idea ![](https://github.com/Hariharan-Gandhi/MeetingRoomFinder/blob/master/Main/img/award.png)
+###[SAP InnoJAM 2015 Mobile App Competition](https://ideas.sap.com/digitalinnovation) - 1st place Winner Idea ![](https://github.com/Hariharan-Gandhi/MeetingRoomFinder/blob/master/Main/img/award.png)
 ![SAP Logo](https://github.com/Hariharan-Gandhi/MeetingRoomFinder/blob/master/Main/view/saplogo.png)
 
 ###Team: 
