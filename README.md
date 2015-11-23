@@ -26,7 +26,7 @@
 Application is hosted on SAP HANA Cloud: https://sapmrf-p1941578957trial.dispatcher.hanatrial.ondemand.com/
 
 ##Event:
-###[SAP InnoJAM 2015 Mobile App Competition](https://ideas.sap.com/digitalinnovation) - 1st place Winner Idea ![](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/blob/master/Main/img/award.png)
+###[SAP InnoJAM 2015 Mobile App Competition](https://ideas.sap.com/digitalinnovation) - 1st place Winner Idea ![](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/master/Main/img/award.png)
 ![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/master/Main/view/saplogo.png)
 
 ###Team: 
@@ -40,10 +40,10 @@ Application is hosted on SAP HANA Cloud: https://sapmrf-p1941578957trial.dispatc
 ![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/master/Main/img/mainpage.PNG)
 
 ###Overall View:
-![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/blob/master/Main/img/overallview.PNG)
+![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/master/Main/img/overallview.PNG)
 
 ###Room Details:
-![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/blob/master/Main/img/roomdetails.PNG)
+![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/master/Main/img/roomdetails.PNG)
 
 ###Search Results:
-![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/blob/master/Main/img/searchresults.PNG)
+![SAP Logo](https://raw.githubusercontent.com/Hariharan-Gandhi/MeetingRoomFinder/master/Main/img/searchresults.PNG)
